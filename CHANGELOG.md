@@ -1,5 +1,21 @@
 # Changelog
 
+## 72.72.0 - 2021-10-20
+* [#1361](https://github.com/stripe/stripe-go/pull/1361) Bugfix: point client.API#Oauth to the Connect backend.
+* [#1358](https://github.com/stripe/stripe-go/pull/1358) API Updates
+  * Add support for `BuyerID` on `ChargePaymentMethodDetailsAlipay`
+
+## 72.71.0 - 2021-10-15
+* [#1357](https://github.com/stripe/stripe-go/pull/1357) API Updates
+  * Change type of `UsageRecordTimestampParams` from `integer` to `literal('now') | integer`
+* [#1356](https://github.com/stripe/stripe-go/pull/1356) Add generated test suite
+* [#1355](https://github.com/stripe/stripe-go/pull/1355) Make order-related files codegen-able
+  * Add support for `SelectedShippingMethod` and `Status` on `OrderStatus`
+  * Add support for `Carrier` and `TrackingNumber` on `ShippingParams`
+  * Add support for `ExternalCouponCode` and `Object` on `Order`
+  * Add support for `Object` on `OrderItem` and `OrderReturn`
+  * Add support for `Deleted` and `Object` on `SKU`
+
 ## 72.70.0 - 2021-10-11
 * [#1354](https://github.com/stripe/stripe-go/pull/1354) API Updates
   * Add support for `PaymentMethodCategory` and `PreferredLocale` on `ChargePaymentMethodDetailsKlarna`
